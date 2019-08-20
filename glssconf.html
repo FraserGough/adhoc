@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	margin-left:5%;
+	margin-right:auto;
+}
+.contentCard {
+	width:95%;
+}
+button {
+	margin-right:3%;
+}
+.textBlock {
+	line-height:1.2;
+
+}
+.textBlock > p {
+	padding:0;
+	margin:0;
+}
+.content {
+	margin-left:10%;
+}
+.headline {
+	text-align:center;
+}
+table {
+	width:100%;
+}
+.top {
+	font-variant: small-caps;
+}
+td {
+	vertical-align:top;
+	padding-bottom:1%;
+}
+td.name {
+	padding-left:1.8%;
+}
+li {
+	line-height:125%;
+}
+</style>
+<script>
+function openClose(card) {
+	var buttonElem = document.getElementById(card + "Button");
+	var contentElem = document.getElementById(card + "Content");
+	if (buttonElem.innerHTML === "+") {
+		buttonElem.innerHTML = "-";
+	} else {
+		buttonElem.innerHTML = "+";
+	}
+	if (buttonElem.innerHTML === "-") {
+		contentElem.style.display = "block";
+	} else {
+		contentElem.style.display = "none";
+	}
+}
+</script>
+</head>
+<body>
+<div class="contentCard">
+	<div class="headline"><p>Seminar on public law teaching in Scotland's universities<br/>4 September 2019</p></div>
+</div>
+<div class="contentCard">
+	<div class="top"><button type="button" id="AgendaButton" onclick="openClose('Agenda')">+</button>Agenda</div>
+	<div class="content" id="AgendaContent" style="display:none">
+		<table>
+			<tr><td>9:30&ndash;10:00</td><td class="name">Registration</td></tr>
+			<tr><td>10:00&ndash;10:15</td><td class="name">Ruaraidh MacNiven (Solicitor to the Scottish Government), Welcome</td></tr>
+			<tr><td>10:15&ndash;10:45</td><td class="name">James Wolffe QC, the Lord Advocate, Morning's keynote address</td></tr>
+			<tr><td>10:45&ndash;11:00</td><td class="name">Coffee</td></tr>
+			<tr><td>11:00&ndash;12:30</td><td class="name">Session 1, chaired by Craig French (deputy director, Scottish Government Legal Directorate):<ul>
+				<li>Joanne Baker, [topic]</li>
+				<li>Francesca Morton, [topic]</li>
+				<li>Dr Cormac Mac Amhlaigh (University of Edinburgh), response to papers from Ms Baker and Ms Morton</li>
+			</ul></td></tr>
+			<tr><td>12:30&ndash;13:15</td><td class="name">Lunch</td></tr>
+			<tr><td>13:15&ndash;14:00</td><td class="name">Professor Aileen McHarg (University of Strathclyde), Afternoon's keynote address</td></tr>
+			<tr><td>14:00&ndash;14:15</td><td class="name">Coffee</td></tr>
+			<tr><td>14:15&ndash;16:00</td><td class="name">Session 2, chaired by Christine O'Neill (chairman, Brodies LLP):<ul>
+				<li>Professor Alan Page (University of Dundee), [topic]</li>
+				<li>Dr Cormac Mac Amhlaigh, [topic]</li>
+				<li>Graham Crombie (Scottish Government), response to papers from Professor Page and Dr Mac Amhlaigh
+			</ul></td></tr>
+			<tr><td>16:00&ndash;16:15</td><td class="name">Michael Clancy (Director of Law Reform, Law Society of Scotland), Closing remarks</td></tr>
+		</table>
+	</div>
+</div>
+<div class="contentCard">
+	<div class="top"><button type="button" id="WhereButton" onclick="openClose('Where')">+</button>Where</div>
+	<div class="content" id="WhereContent" style="display:none">
+		<div class="textBlock">
+			<p>Edinburgh Centre for Professional Legal Studies</p>
+			<p>Edinburgh Law School</p>
+			<p>Holyrood Road</p>
+			<p>EH8 8FQ</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.9954786113663!2d-3.184330948833253!3d55.94945028051123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78639443355%3A0x7986884059723f24!2sEdinburgh+Centre+for+Professional+Legal+Studies!5e0!3m2!1sen!2suk!4v1566333909249!5m2!1sen!2suk" width=80% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div>
+</body>
+</html>
