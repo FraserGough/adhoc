@@ -3,13 +3,17 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 <style>
 body {
 	margin-left:5%;
 	margin-right:auto;
+	font-family: 'Fira Sans', sans-serif;
 }
 .contentCard {
 	width:95%;
+	padding-bottom:1%;
+	border-bottom: 1px solid black;
 }
 button {
 	margin-right:3%;
@@ -23,6 +27,7 @@ button {
 	margin:0;
 }
 .content {
+	padding-top:1%;
 	margin-left:10%;
 }
 .headline {
@@ -32,7 +37,9 @@ table {
 	width:100%;
 }
 .top {
+	padding-top:1%;
 	font-variant: small-caps;
+	font-size:110%;
 }
 td {
 	vertical-align:top;
@@ -46,7 +53,7 @@ li {
 }
 .enquiries {
 	margin-left:5%;
-	padding-top:10%;
+	padding-top:2%;
 	}
 </style>
 <script>
@@ -106,9 +113,10 @@ function openClose(card) {
 		</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.9954786113663!2d-3.184330948833253!3d55.94945028051123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78639443355%3A0x7986884059723f24!2sEdinburgh+Centre+for+Professional+Legal+Studies!5e0!3m2!1sen!2suk!4v1566333909249!5m2!1sen!2suk" width=80% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
+</div>
 <div class="contentCard">
-	<div class="top"></div>
-	<div class="enquiries">If you have any questions about the seminar, please email <a href="mailto:glsseducation@gov.scot?subject='2019 seminar on teaching of public law'">glsseducation@gov.scot</a></div>
+	<div class="top"><button type="button" style="visibility:hidden">+</button>Enquiries</div>
+	<div class="content">If you have any questions about the seminar, please email <a href="mailto:glsseducation@gov.scot?subject='2019 seminar on teaching of public law'">glsseducation@gov.scot</a></div>
 </div>
 </body>
 </html>
