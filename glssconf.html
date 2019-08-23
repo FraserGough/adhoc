@@ -26,6 +26,9 @@ button {
 	padding:0;
 	margin:0;
 }
+p {
+	line-height:1.5;
+}
 .content {
 	padding-top:1%;
 	margin-left:10%;
@@ -99,7 +102,7 @@ function openClose(card) {
 			<tr><td>14:00&ndash;14:15</td><td class="name">Coffee</td></tr>
 			<tr><td>14:15&ndash;16:00</td><td class="name">Session 2, chaired by Jennifer Jack (partner, Harper Macleod LLP):<ul>
 				<li>Professor Alan Page (University of Dundee), <span class="talkTitle">On the effect of the fact and evolution of devolution on public law teaching</span></li>
-				<li>Dr Cormac Mac Amhlaigh (University of Edinburgh), <span class="talkTitle">[topic]</span></li>
+				<li>Dr Cormac Mac Amhlaigh (University of Edinburgh), <span class="talkTitle">The value of constitutional theory in public law teaching</span></li>
 				<li>Graham Crombie (Scottish Government), <span class="talkTitle">Response to Professor Page and Dr Mac Amhlaigh</span>
 			</ul></td></tr>
 			<tr><td>16:00&ndash;16:15</td><td class="name">Michael Clancy (Director of Law Reform, Law Society of Scotland), <span class="talkTitle">Closing remarks</span></td></tr>
@@ -117,6 +120,11 @@ function openClose(card) {
 		</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.9954786113663!2d-3.184330948833253!3d55.94945028051123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78639443355%3A0x7986884059723f24!2sEdinburgh+Centre+for+Professional+Legal+Studies!5e0!3m2!1sen!2suk!4v1566333909249!5m2!1sen!2suk" width=80% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
+</div>
+<div class="contentCard">
+	<div class="top"><button type="button" id="CPDButton" onclick="openClose('CPD')">+</button>Cpd</div>
+	<div class="content" id="CPDContent" style="display:none">
+		<p>The seminar will provide 5 hours verifiable CPD for the purposes of the Law Society of Scotland's CPD requirements.</p><p>A suggested description of the learning aim and outcome for practising solicitors attending the seminar is: to reflect on the range of knowledge and skills needed by public lawyers practising today and the implications for training the public lawyers of tomorrow.</div>
 </div>
 <div class="contentCard">
 	<div class="top"><button type="button" style="visibility:hidden">+</button>Enquiries</div>
